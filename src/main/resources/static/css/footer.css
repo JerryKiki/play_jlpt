@@ -1,0 +1,116 @@
+@import url('vars.css');
+
+.footer {
+    background: #ffffff;
+    border-style: solid;
+    border-color: #ececec;
+    border-width: 1px 0px 0px 0px;
+    padding: 10px 24px 10px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    z-index: 1000;
+}
+.infos {
+    display: flex;
+    flex-direction: row;
+    gap: 502px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.send-email {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.mail-icon-frame {
+    border-radius: 31px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 62px;
+    height: 62px;
+    position: relative;
+    overflow: visible;
+}
+.send-mail-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.made-info-text {
+    color: #000000;
+    text-align: right;
+    font-family: "Noto Sans KRr", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.made-info-text-span {
+    color: #000000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.made-info-text-span2 {
+    color: #000000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+}
+.made-info-text-span3 {
+    color: #000000;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.copyright-text {
+    color: #000000;
+    text-align: right;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

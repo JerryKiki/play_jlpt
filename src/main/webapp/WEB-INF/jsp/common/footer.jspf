@@ -1,0 +1,24 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div class="footer">
+    <div class="infos">
+        <div class="send-email">
+            <img class="mail-icon-frame" src="${pageContext.request.contextPath}/images/mailicon.svg"/>
+            <div class="send-mail-text">이메일 문의</div>
+        </div>
+        <div class="info">
+            <div class="made-info-text">
+              <span>
+                <span class="made-info-text-span">제작자 : JerryKiki</span>
+                <span class="made-info-text-span2">|</span>
+                <span class="made-info-text-span3">
+                  이메일 : gasi758@gmail.com | 연락처 : 010-0000-0000
+                </span>
+              </span>
+            </div>
+            <div class="copyright-text">
+                Copyright ⓒ 2024 JerryKiki All Right Reserved.
+            </div>
+        </div>
+    </div>
+</div>

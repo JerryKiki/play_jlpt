@@ -8,11 +8,71 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>main</title>
+    <title>PLAY JLPT MAIN</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/header.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/footer.css">
 </head>
     <body>
+
+    <%@ include file="../common/header.jspf"%>
+
     <div class="_0-home">
+        <div class="home-scroll-1">
+            <img class="bg-scroll-1" src="${pageContext.request.contextPath}/images/bg-img-scroll1.png"/>
+            <div class="transparent-black3"></div>
+            <div class="scroll-group">
+                <div class="scroll-text">スクロール</div>
+                <img class="scroll-arrow" src="${pageContext.request.contextPath}/images/scrollArrow.svg"/>
+            </div>
+            <div class="slogan">
+                <div class="slogan-text-box">
+                    <div class="slogan-text">
+                        JLPT 문제풀이를
+                        <br/>
+                        게임처럼 쉽게!
+                    </div>
+                </div>
+                <div class="btn">
+                    <div class="start-btn">
+                        <div class="start-btn-text">始める</div>
+                        <img class="start-arrow" src="${pageContext.request.contextPath}/images/startArrow.svg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-scroll-2">
+            <img class="bg-scroll-2" src="${pageContext.request.contextPath}/images/bg-img-scroll2.png"/>
+            <div class="transparent-black2"></div>
+            <div class="allcomponents-scroll-2">
+                <div class="menu-1">
+                    <div class="menu-1-circle">
+                        <img class="menu-1-svg" src="${pageContext.request.contextPath}/images/examschedule.svg"/>
+                    </div>
+                    <div class="exam-scedule-btn">
+                        <div class="exam-scedule-text">시험 접수 일정</div>
+                    </div>
+                </div>
+                <div class="menu-2">
+                    <div class="menu-2-circle">
+                        <img class="menu-2-svg" src="${pageContext.request.contextPath}/images/Incruitinfo.svg"/>
+                    </div>
+                    <div class="incruit-info-btn">
+                        <div class="incruit-info-text">일본 채용 정보</div>
+                    </div>
+                </div>
+                <div class="menu-3">
+                    <div class="menu-3-circle">
+                        <img class="menu-3-svg" src="${pageContext.request.contextPath}/images/textbook.svg"/>
+                    </div>
+                    <div class="textbook-btn">
+                        <div class="textbook-text">JLPT 교재 추천</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="home-scroll-3">
             <img class="bg-scroll-3" src="${pageContext.request.contextPath}/images/bg-img-scroll3.png"/>
             <div class="transparent-black"></div>
@@ -147,90 +207,8 @@
                 </div>
             </div>
         </div>
-        <div class="home-scroll-2">
-            <img class="bg-scroll-2" src="${pageContext.request.contextPath}/images/bg-img-scroll2.png"/>
-            <div class="transparent-black2"></div>
-            <div class="allcomponents-scroll-2">
-                <div class="menu-1">
-                    <img class="menu-1-circle" src="${pageContext.request.contextPath}/images/examschedule.svg"/>
-                    <div class="exam-scedule-btn">
-                        <div class="exam-scedule-text">시험 접수 일정</div>
-                    </div>
-                </div>
-                <div class="menu-2">
-                    <img class="menu-2-circle" src="${pageContext.request.contextPath}/images/Incruitinfo.svg"/>
-                    <div class="incruit-info-btn">
-                        <div class="incruit-info-text">일본 채용 정보</div>
-                    </div>
-                </div>
-                <div class="menu-3">
-                    <img class="menu-3-circle" src="${pageContext.request.contextPath}/images/textbook.svg"/>
-                    <div class="textbook-btn">
-                        <div class="textbook-text">JLPT 교재 추천</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="home-scroll-1">
-            <img class="bg-scroll-1" src="${pageContext.request.contextPath}/images/bg-img-scroll1.png"/>
-            <div class="transparent-black3"></div>
-            <div class="scroll-group">
-                <div class="scroll-text">スクロール</div>
-                <img class="scroll-arrow" src="${pageContext.request.contextPath}/images/scrollArrow.svg"/>
-            </div>
-            <div class="slogan">
-                <div class="slogan-text-box">
-                    <div class="slogan-text">
-                        JLPT 문제풀이를
-                        <br/>
-                        게임처럼 쉽게!
-                    </div>
-                </div>
-                <div class="btn">
-                    <div class="start-btn">
-                        <div class="start-btn-text">始める</div>
-                        <img class="start-arrow" src="${pageContext.request.contextPath}/images/startArrow.svg"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header">
-            <div class="menu">
-                <div class="logo">
-                    <img class="logo-svg" src="${pageContext.request.contextPath}/images/logo-svg0.svg"/>
-                    <div class="logo-text">PLAY JLPT</div>
-                </div>
-                <div class="menu-items">
-                    <div class="item-1-text">문제풀이</div>
-                    <div class="item-2-text">점수분석</div>
-                    <div class="item-3-text">질의응답</div>
-                    <div class="item-4-text">커뮤니티</div>
-                </div>
-                <div class="login-menu-text">LOGIN</div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="infos">
-                <div class="send-email">
-                    <img class="mail-icon-frame" src="${pageContext.request.contextPath}/images/mailicon.svg"/>
-                    <div class="send-mail-text">이메일 문의</div>
-                </div>
-                <div class="info">
-                    <div class="made-info-text">
-              <span>
-                <span class="made-info-text-span">제작자 : JerryKiki</span>
-                <span class="made-info-text-span2">|</span>
-                <span class="made-info-text-span3">
-                  이메일 : gasi758@gmail.com | 연락처 : 010-0000-0000
-                </span>
-              </span>
-                    </div>
-                    <div class="copyright-text">
-                        Copyright ⓒ 2024 JerryKiki All Right Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+
+    <%@ include file="../common/footer.jspf"%>
 </body>
 </html>

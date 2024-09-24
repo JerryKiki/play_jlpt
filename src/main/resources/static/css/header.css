@@ -1,0 +1,138 @@
+@import url('vars.css');
+
+.header {
+    background: #ffffff;
+    border-style: solid;
+    border-color: #ececec;
+    border-width: 0px 0px 1px 0px;
+    padding: 15px 95px 15px 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 153px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.logo-svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+.logo-text {
+    color: #000000;
+    text-align: left;
+    font-family: "KeaniaOne-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 120px;
+    font-weight: 400;
+    position: relative;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.item-1-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 120px;
+    font-weight: 400;
+    position: relative;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-2-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 120px;
+    font-weight: 400;
+    position: relative;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-3-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 120px;
+    font-weight: 400;
+    position: relative;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-4-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 120px;
+    font-weight: 400;
+    position: relative;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-menu-text {
+    color: #000000;
+    text-align: right;
+    font-family: "KeaniaOne-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 120px;
+    font-weight: 400;
+    position: relative;
+    width: 113px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -39,6 +39,16 @@
     font-style: normal;
 }
 
+/* 전체 페이지를 Flexbox로 설정 */
+html, body {
+    height: 100%; /* 페이지 전체 높이 설정 */
+    margin: 0; /* 기본 마진 제거 */
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 배치 */
+    align-items: center;
+    position: relative;
+}
+
 ._0-home,
 ._0-home * {
     box-sizing: border-box;
@@ -46,15 +56,13 @@
 ._0-home {
     background: #ffffff;
     height: 2160px;
-    position: relative;
-    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .home-scroll-3 {
+    position: relative;
     width: 1280px;
     height: 720px;
-    position: absolute;
-    left: calc(50% - 640px);
-    top: calc(50% - -360px);
     overflow: hidden;
 }
 .bg-scroll-3 {
@@ -66,11 +74,11 @@
 }
 .transparent-black {
     background: rgba(26, 22, 22, 0.4);
-    width: 1280px;
-    height: 720px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: calc(50% - 640px);
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
 }
 .allcomponents-scroll-3 {
     padding: 29px 420px 29px 420px;
@@ -171,7 +179,7 @@
     letter-spacing: 0.03em;
     font-weight: 400;
     position: relative;
-    width: 222px;
+    width: 260px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -516,11 +524,9 @@
     -webkit-text-stroke: 1px #ffffff;
 }
 .home-scroll-2 {
+    position: relative;
     width: 1280px;
     height: 720px;
-    position: absolute;
-    left: 0px;
-    top: 720px;
     overflow: hidden;
 }
 .bg-scroll-2 {
@@ -559,7 +565,9 @@
     position: relative;
 }
 .menu-1-circle {
+    background-color: #ffffff;
     border-radius: 133.5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -610,7 +618,9 @@
     position: relative;
 }
 .menu-2-circle {
+    background-color: #ffffff;
     border-radius: 133.5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -661,7 +671,9 @@
     position: relative;
 }
 .menu-3-circle {
+    background-color: #ffffff;
     border-radius: 133.5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -702,12 +714,10 @@
     justify-content: center;
 }
 .home-scroll-1 {
+    position: relative;
     background: #ffffff;
     width: 1280px;
     height: 720px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
     overflow: hidden;
 }
 .bg-scroll-1 {
@@ -835,257 +845,4 @@
     height: 26.26px;
     position: relative;
     overflow: visible;
-}
-.header {
-    background: #ffffff;
-    border-style: solid;
-    border-color: #ececec;
-    border-width: 0px 0px 1px 0px;
-    padding: 15px 95px 15px 95px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 55px;
-    position: absolute;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 153px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.logo {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.logo-svg {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    position: relative;
-    overflow: visible;
-}
-.logo-text {
-    color: #000000;
-    text-align: left;
-    font-family: "KeaniaOne-Regular", sans-serif;
-    font-size: 20px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.menu-items {
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.item-1-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-2-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-3-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-4-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.login-menu-text {
-    color: #000000;
-    text-align: right;
-    font-family: "KeaniaOne-Regular", sans-serif;
-    font-size: 20px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.footer {
-    background: #ffffff;
-    border-style: solid;
-    border-color: #ececec;
-    border-width: 1px 0px 0px 0px;
-    padding: 10px 24px 10px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 98px;
-    position: absolute;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-}
-.infos {
-    display: flex;
-    flex-direction: row;
-    gap: 502px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.send-email {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.mail-icon-frame {
-    border-radius: 31px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 62px;
-    height: 62px;
-    position: relative;
-    overflow: visible;
-}
-.send-mail-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: flex-end;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.made-info-text {
-    color: #000000;
-    text-align: right;
-    font-family: "Noto Sans KRr", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0;
-    font-weight: 400;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.made-info-text-span {
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-}
-.made-info-text-span2 {
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.2em;
-    font-weight: 400;
-}
-.made-info-text-span3 {
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-}
-.copyright-text {
-    color: #000000;
-    text-align: right;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    align-self: stretch;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }

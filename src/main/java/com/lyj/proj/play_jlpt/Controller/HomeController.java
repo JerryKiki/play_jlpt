@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 
     @GetMapping("/main")
-    @ResponseBody
-    public String test() {
-        return "연결 테스트";
+    public String showMain() {
+        return "/home/main";
     }
 }

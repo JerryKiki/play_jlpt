@@ -7,13 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/home")
+@RequestMapping("/member")
 @Slf4j
-public class HomeController {
+public class MemberController {
 
-    @GetMapping("/main")
-    public String showHomeMain() {
-        return "/home/main";
+    @GetMapping("/login")
+    public String showLoginPage() {
+        return "/member/login";
     }
-
 }

@@ -1,138 +1,107 @@
-@import url('vars.css');
+@import url('fonts.css');
 
 .header {
-    background: #ffffff;
-    border-style: solid;
-    border-color: #ececec;
-    border-width: 0px 0px 1px 0px;
-    padding: 15px 95px 15px 95px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 55px;
+    padding: 15px 95px;
     position: fixed;
-    right: 0px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     z-index: 1000;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: #ffffff;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: #ebebeb;
 }
-.menu {
-    display: flex;
-    flex-direction: row;
+
+.header .menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     gap: 153px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.header .logo {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.logo {
-    display: flex;
-    flex-direction: row;
     gap: 5px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
     position: relative;
+    flex: 0 0 auto;
+    cursor:pointer;
 }
-.logo-svg {
-    flex-shrink: 0;
+
+.header .logo-svg {
+    position: relative;
     width: 24px;
     height: 24px;
-    position: relative;
-    overflow: visible;
 }
-.logo-text {
-    color: #000000;
-    text-align: left;
-    font-family: "KeaniaOne-Regular", sans-serif;
-    font-size: 20px;
-    line-height: 120px;
-    font-weight: 400;
+
+.header .logo-text {
     position: relative;
     width: 113px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    margin-top: -1px;
+    font-family: "Keania One", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    line-height: 24px;
 }
-.menu-items {
-    display: flex;
-    flex-direction: row;
+
+.header .menu-items {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     gap: 13px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
     position: relative;
+    flex: 0 0 auto;
 }
-.item-1-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
+
+.header .menu-items-text {
     position: relative;
     width: 113px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-2-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
+    margin-top: -1px;
+    font-family: "Noto Sans KR", Sans-Serif;
     font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    white-space: nowrap;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.header .login-menu-text {
     position: relative;
     width: 113px;
     height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-3-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
+    margin-top: -1px;
+    font-family: "Keania One", Helvetica;
     font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.item-4-text {
     color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.login-menu-text {
-    color: #000000;
-    text-align: right;
-    font-family: "KeaniaOne-Regular", sans-serif;
     font-size: 20px;
-    line-height: 120px;
-    font-weight: 400;
-    position: relative;
-    width: 113px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    text-align: right;
+    letter-spacing: 0;
+    white-space: nowrap;
+    line-height: 24px;
+    cursor: pointer;
 }

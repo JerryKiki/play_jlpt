@@ -7,13 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/home")
+@RequestMapping("/exam")
 @Slf4j
-public class HomeController {
+public class ExamController {
 
     @GetMapping("/main")
-    public String showHomeMain() {
-        return "/home/main";
+    public String showExamMain() {
+        return "/exam/main";
     }
+
+    @GetMapping("/selectCategory")
+    public String showSelectCategory() { return "/exam/selectCategory"; }
 
 }

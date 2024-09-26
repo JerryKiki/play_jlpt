@@ -14,26 +14,14 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/footer.css">
 
     <!-- 테일윈드 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="element-HOME">
     <div class="home-container">
-        <header class="header">
-            <div class="menu">
-                <div class="logo">
-                    <img class="logo-svg" src="${pageContext.request.contextPath}/images/logo.svg"/>
-                    <div class="logo-text">PLAY JLPT</div>
-                </div>
-                <div class="menu-items">
-                    <div class="text">문제풀이</div>
-                    <div class="text">점수분석</div>
-                    <div class="text">질의응답</div>
-                    <div class="text">커뮤니티</div>
-                </div>
-                <div class="login-menu-text">LOGIN</div>
-            </div>
-        </header>
+
+        <%@ include file="../common/header.jspf"%>
+
         <div class="HOME-scroll-1">
             <div class="contents">
                 <div class="bg-and-scroll">
@@ -54,7 +42,7 @@
                             <p class="span-wrapper"><span class="span">게임처럼 쉽게!</span></p>
                         </div>
                     </div>
-                    <button class="btn">
+                    <button class="btn" onclick="location.href='../exam/main'">
                         <div class="start-btn">
                             <div class="start-btn-text">始める</div>
                             <img class="start-arrow" src="${pageContext.request.contextPath}/images/startArrow.svg"/>
@@ -63,12 +51,13 @@
                 </div>
             </div>
         </div>
+
         <div class="HOME-scroll-2">
             <div class="bg-group-scroll">
                 <div class="transparent-black"></div>
             </div>
             <div class="scroll-contents">
-                <div class="div">
+                <div class="scroll-2-menus" onclick="window.open('https://www.jlpt.or.kr/html/information_01.html')">
                     <div class="menu-circle menu-1-circle">
                         <img class="menu-svg" src="${pageContext.request.contextPath}/images/examschedule.svg"/>
                     </div>
@@ -76,7 +65,7 @@
                         <div class="text-wrapper-2">시험 접수 일정</div>
                     </div>
                 </div>
-                <div class="div">
+                <div class="scroll-2-menus" onclick="window.open('https://www.jlpt.or.kr/html/info02.html')">
                     <div class="menu-circle menu-2-circle">
                         <img class="menu-svg" src="${pageContext.request.contextPath}/images/Incruitinfo.svg"/>
                     </div>
@@ -84,7 +73,7 @@
                         <div class="text-wrapper-2">일본 채용 정보</div>
                     </div>
                 </div>
-                <div class="div">
+                <div class="scroll-2-menus" onclick="window.open('https://search.shopping.naver.com/search/all?adQuery=jlpt%EA%B5%90%EC%9E%AC&frm=NVSCPRO&origQuery=jlpt%EA%B5%90%EC%9E%AC&pagingIndex=1&pagingSize=40&productSet=total&query=jlpt%EA%B5%90%EC%9E%AC&sort=rel&timestamp=&viewType=list')">
                     <div class="menu-circle menu-3-circle">
                         <img class="menu-svg" src="${pageContext.request.contextPath}/images/textbook.svg"/>
                     </div>
@@ -94,6 +83,7 @@
                 </div>
             </div>
         </div>
+
         <div class="HOME-scroll-3">
             <div class="transparent-black-wrapper">
                 <div class="transparent-black"></div>
@@ -114,13 +104,15 @@
                                         <div class="text-frame">
                                             <p class="text-2">ニュースのタイトル 길이 제대로 들어가는지 체크중...</p>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame"><p class="text-2">야후재팬 엑세스 랭킹 탑5 크롤링 예정</p></div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -129,7 +121,8 @@
                                             <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
                                             </div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -138,7 +131,8 @@
                                             <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
                                             </div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -147,7 +141,8 @@
                                             <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
                                             </div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +162,8 @@
                                         <div class="text-frame">
                                             <div class="text-2">관광지 이름</div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -178,7 +174,8 @@
                                                 https://kr.trip.com/travel-guide/attraction/japan-100041/tourist-attractions/?locale=ko-KR&amp;curr=KRW
                                             </p>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -186,7 +183,8 @@
                                         <div class="text-frame">
                                             <div class="text-2">해당 링크는 트립닷컴으로 연결됨...</div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -195,7 +193,8 @@
                                             <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
                                             </div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
@@ -204,7 +203,8 @@
                                             <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
                                             </div>
                                         </div>
-                                        <img class="mask" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                             </div>
@@ -225,22 +225,9 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="infos">
-                <div class="send-email">
-                    <img class="mail-icon-frame" src="img/mail-icon-frame.svg"/>
-                    <div class="send-mail-text">이메일 문의</div>
-                </div>
-                <div class="info">
-                    <p class="made-info-text">
-                        <span class="text-wrapper-5">제작자 : JerryKiki</span>
-                        <span class="text-wrapper-6"> |</span>
-                        <span class="text-wrapper-5"> 이메일 : gasi758@gmail.com | 연락처 : 010-0000-0000</span>
-                    </p>
-                    <p class="copyright-text">Copyright ⓒ 2024 JerryKiki All Right Reserved.</p>
-                </div>
-            </div>
-        </footer>
+
+        <%@ include file="../common/footer.jspf"%>
+
     </div>
 </div>
 </body>

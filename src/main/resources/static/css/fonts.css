@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'CP Font';
+    src: url('static/fonts/CPFont.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cp-font {
+    font-family: "CP Font", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.neoDunggeunmo {
+    font-family: "NeoDunggeunmo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.noto-sans-jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

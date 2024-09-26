@@ -1,116 +1,102 @@
-@import url('vars.css');
+@import url('fonts.css');
 
-.footer {
-    background: #ffffff;
-    border-style: solid;
-    border-color: #ececec;
-    border-width: 1px 0px 0px 0px;
-    padding: 10px 24px 10px 24px;
+.element-HOME .footer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
     justify-content: center;
-    height: 98px;
-    z-index: 1000;
+    gap: 10px;
+    padding: 10px 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: #ffffff;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-color: #ebebeb;
 }
-.infos {
-    display: flex;
-    flex-direction: row;
+
+.element-HOME .infos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     gap: 502px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.element-HOME .send-email {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-.send-email {
-    display: flex;
-    flex-direction: row;
     gap: 8px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
     position: relative;
+    flex: 0 0 auto;
 }
-.mail-icon-frame {
-    border-radius: 31px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+
+.element-HOME .mail-icon-frame {
+    position: relative;
     width: 62px;
     height: 62px;
-    position: relative;
-    overflow: visible;
-}
-.send-mail-text {
-    color: #000000;
-    text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-    position: relative;
+    border-radius: 50%;
+    border: 2px solid black;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.info {
-    display: flex;
+
+.element-HOME .send-mail-text {
+    position: relative;
+    width: fit-content;
+    font-family: "Noto Sans KR", Sans-Serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.element-HOME .info {
+    display: inline-flex;
     flex-direction: column;
-    gap: 0px;
     align-items: flex-end;
     justify-content: center;
-    flex-shrink: 0;
     position: relative;
+    flex: 0 0 auto;
 }
-.made-info-text {
+
+.element-HOME .made-info-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Noto Sans KR", Sans-Serif;
+    font-weight: 400;
     color: #000000;
-    text-align: right;
-    font-family: "Noto Sans KRr", sans-serif;
     font-size: 16px;
+    text-align: right;
     line-height: 32px;
+    white-space: nowrap;
     letter-spacing: 0;
-    font-weight: 400;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
-.made-info-text-span {
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-}
-.made-info-text-span2 {
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.2em;
-    font-weight: 400;
-}
-.made-info-text-span3 {
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-}
-.copyright-text {
-    color: #000000;
-    text-align: right;
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+
+.element-HOME .copyright-text {
     position: relative;
     align-self: stretch;
     height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    font-family: "Noto Sans KR", Sans-Serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    white-space: nowrap;
 }

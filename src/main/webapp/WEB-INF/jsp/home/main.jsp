@@ -9,18 +9,23 @@
 <html>
 <head>
     <title>PLAY JLPT MAIN</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/header.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/footer.css">
+    <script src="${pageContext.request.contextPath}/js/home_main_get_news_rangking.js"></script>
 
     <!-- 테일윈드 -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div class="element-HOME">
     <div class="home-container">
 
-        <%@ include file="../common/header.jspf"%>
+        <%@ include file="../common/header.jspf" %>
 
         <div class="HOME-scroll-1">
             <div class="contents">
@@ -73,7 +78,8 @@
                         <div class="text-wrapper-2">일본 채용 정보</div>
                     </div>
                 </div>
-                <div class="scroll-2-menus" onclick="window.open('https://search.shopping.naver.com/search/all?adQuery=jlpt%EA%B5%90%EC%9E%AC&frm=NVSCPRO&origQuery=jlpt%EA%B5%90%EC%9E%AC&pagingIndex=1&pagingSize=40&productSet=total&query=jlpt%EA%B5%90%EC%9E%AC&sort=rel&timestamp=&viewType=list')">
+                <div class="scroll-2-menus"
+                     onclick="window.open('https://search.shopping.naver.com/search/all?adQuery=jlpt%EA%B5%90%EC%9E%AC&frm=NVSCPRO&origQuery=jlpt%EA%B5%90%EC%9E%AC&pagingIndex=1&pagingSize=40&productSet=total&query=jlpt%EA%B5%90%EC%9E%AC&sort=rel&timestamp=&viewType=list')">
                     <div class="menu-circle menu-3-circle">
                         <img class="menu-svg" src="${pageContext.request.contextPath}/images/textbook.svg"/>
                     </div>
@@ -102,47 +108,50 @@
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <p class="text-2">ニュースのタイトル 길이 제대로 들어가는지 체크중...</p>
+                                            <a class="text-2 news-list-text-1" target="_blank">뉴스 불러오기 실패</a>
                                         </div>
-                                        <img class="mask"
-                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
-                                    </div>
-                                </div>
-                                <div class="div-wrapper-3">
-                                    <div class="div-5">
-                                        <div class="text-frame"><p class="text-2">야후재팬 엑세스 랭킹 탑5 크롤링 예정</p></div>
-                                        <img class="mask"
+                                        <img class="mask news-thumb-1"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
-                                            </div>
+                                            <a class="text-2 news-list-text-2" target="_blank">
+                                                뉴스 불러오기 실패
+                                            </a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask news-thumb-2"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
-                                            </div>
+                                            <a class="text-2 news-list-text-3" target="_blank">
+                                                뉴스 불러오기 실패
+                                            </a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask news-thumb-3"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
-                                            </div>
+                                            <a class="text-2 news-list-text-4" target="_blank">뉴스 불러오기 실패
+                                            </a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask news-thumb-4"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="div-wrapper-3">
+                                    <div class="div-5">
+                                        <div class="text-frame">
+                                            <a class="text-2 news-list-text-5" target="_blank">뉴스 불러오기 실패</a>
+                                        </div>
+                                        <img class="mask news-thumb-5" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +235,9 @@
             </div>
         </div>
 
-        <%@ include file="../common/footer.jspf"%>
+        <ul id="ranking-list"></ul>
+
+        <%@ include file="../common/footer.jspf" %>
 
     </div>
 </div>

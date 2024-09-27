@@ -457,6 +457,7 @@ body {
 }
 
 .element-HOME .text-2 {
+    display: block;
     position: relative;
     width: 100%; /* 부모 요소 크기에 맞춤 */
     font-family: "Noto Sans JP", Sans-Serif;
@@ -464,8 +465,10 @@ body {
     color: #000000;
     font-size: 14px;
     line-height: 17px; /* 텍스트 줄 높이 */
-    text-align: center; /* 수평 중앙 정렬 */
-    white-space: nowrap; /* 텍스트가 한 줄에 표시되도록 강제 */
+    text-align: left; /* 수평 중앙 정렬 */
+    display: -webkit-box; /* Flexbox 기반 레이아웃 */
+    -webkit-line-clamp: 2; /* 최대 2줄까지 표시 */
+    -webkit-box-orient: vertical; /* Flexbox 방향을 세로로 설정 */
     overflow: hidden; /* 넘치는 텍스트 숨김 */
     text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 처리 */
     margin: 0; /* 마진 제거 */

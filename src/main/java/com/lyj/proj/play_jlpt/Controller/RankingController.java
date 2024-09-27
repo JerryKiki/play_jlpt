@@ -19,11 +19,21 @@ public class RankingController {
         this.rankingService = rankingService;
     }
 
-    @GetMapping("/rankings")
-    public Map<String, List<String>> getTop5Rankings() {
+    @GetMapping("/newsRankings")
+    public Map<String, List<String>> getTop5NewsRankings() {
+        Map<String, List<String>> newsRankings = rankingService.getNews_top5Rankings();
+        if (newsRankings.isEmpty()) {
+            System.err.println("뉴스 랭킹 데이터를 불러올 수 없습니다.");
+        }
+        return newsRankings;
+    }
 
-        System.out.println("controller 랭킹 : " + rankingService.getTop5Rankings());
-
-        return rankingService.getTop5Rankings();
+    @GetMapping("/tourSpotRankings")
+    public Map<String, List<String>> getTop5SpotRankings() {
+        Map<String, List<String>> tourSpotRankings = rankingService.getTourSpot_top5Rankings();
+        if (tourSpotRankings.isEmpty()) {
+            System.err.println("관광지 랭킹 데이터를 불러올 수 없습니다.");
+        }
+        return tourSpotRankings;
     }
 }

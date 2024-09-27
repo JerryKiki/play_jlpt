@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/header.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/footer.css">
-    <script src="${pageContext.request.contextPath}/js/home_main_get_news_rangking.js"></script>
+    <script src="${pageContext.request.contextPath}/js/home_main.js"></script>
 
     <!-- 테일윈드 -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css"/>
@@ -151,7 +151,8 @@
                                         <div class="text-frame">
                                             <a class="text-2 news-list-text-5" target="_blank">뉴스 불러오기 실패</a>
                                         </div>
-                                        <img class="mask news-thumb-5" src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
+                                        <img class="mask news-thumb-5"
+                                             src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                             </div>
@@ -169,50 +170,49 @@
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">관광지 이름</div>
+                                            <a class="tour-list-text-1 text-2">관광지 목록 불러오기 실패</a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask tour-thumb-1"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <p class="text-2">
-                                                링크에서 크롤링 예정 :
-                                                https://kr.trip.com/travel-guide/attraction/japan-100041/tourist-attractions/?locale=ko-KR&amp;curr=KRW
-                                            </p>
+                                            <a class="tour-list-text-2 text-2">
+                                                관광지 목록 불러오기 실패
+                                            </a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask tour-thumb-2"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">해당 링크는 트립닷컴으로 연결됨...</div>
+                                            <a class="tour-list-text-3 text-2">관광지 목록 불러오기 실패</a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask tour-thumb-3"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
-                                            </div>
+                                            <a class="tour-list-text-4 text-2">관광지 목록 불러오기 실패
+                                            </a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask tour-thumb-4"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>
                                 <div class="div-wrapper-3">
                                     <div class="div-5">
                                         <div class="text-frame">
-                                            <div class="text-2">ニュースのタイトルasdasdadasdasdadasdasdasdasdadasad
-                                            </div>
+                                            <a class="tour-list-text-5 text-2">관광지 목록 불러오기 실패
+                                            </a>
                                         </div>
-                                        <img class="mask"
+                                        <img class="mask tour-thumb-5"
                                              src="${pageContext.request.contextPath}/images/test-icon.jpg"/>
                                     </div>
                                 </div>

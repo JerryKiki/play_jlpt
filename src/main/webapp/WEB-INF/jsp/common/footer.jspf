@@ -1,18 +1,22 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<footer class="footer">
-    <div class="infos">
+<footer class="footer-container">
+    <div class="info-section">
         <div class="send-email">
-            <div class="mail-icon-frame">
-                <img class="mail-icon" src="${pageContext.request.contextPath}/images/mailicon.svg"/>
-            </div>
-            <div class="send-mail-text">이메일 문의</div>
+            <div class="mail-icon-frame"><div class="mail-icon-svg"></div></div>
+            <span class="send-mail-text">이메일 문의</span>
         </div>
         <div class="info">
-            <p class="made-info-text">
-                제작자 : JerryKiki | 이메일 : gasi758@gmail.com | 연락처 : 010-0000-0000
-            </p>
-            <p class="copyright-text">Copyright ⓒ 2024 JerryKiki All Right Reserved.</p>
+            <div class="made-info-text">
+            <span class="made-by-jerrykiki">제작자 : JerryKiki</span
+            ><span class="separator"> |</span
+            ><span class="text-4">
+              이메일 : gasi758@gmail.com | 연락처 : 010-0000-0000</span
+            >
+            </div>
+            <span class="text-5"
+            >Copyright ⓒ 2024 JerryKiki All Right Reserved.</span
+            >
         </div>
     </div>
 </footer>

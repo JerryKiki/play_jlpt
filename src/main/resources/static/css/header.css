@@ -1,107 +1,192 @@
 @import url('fonts.css');
 
-.header {
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+    --rpx: 100vw / 1280;
+}
+
+.header-container {
+    overflow: hidden;
+}
+
+.header-container,
+.header-container * {
+    box-sizing: border-box;
+}
+
+.header-container input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 15px 95px;
-    position: fixed;
-    left: 0;
+    flex-wrap: nowrap;
+    gap: calc(10 * var(--rpx));
+    position: fixed; /* 페이지 상단에 고정 */
     top: 0;
-    z-index: 1000;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    margin-top: -1px;
-    margin-left: -1px;
-    margin-right: -1px;
-    background-color: #ffffff;
-    border-top-style: none;
-    border-right-style: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-color: #ebebeb;
+    left: 0;
+    right: 0;
+    /*width: 100%; !* 화면 너비에 맞춤 *!*/
+    width: calc(1280 * var(--rpx));
+    height: calc(55 * var(--rpx));
+    margin: 0;
+    padding: calc(15 * var(--rpx)) calc(95 * var(--rpx)) calc(15 * var(--rpx)) calc(95 * var(--rpx));
+    background: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    z-index: 1000; /* 다른 요소 위에 고정되도록 z-index 설정 */
 }
-
-.header .menu {
-    display: inline-flex;
+.header-container .menu {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 153px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: calc(153 * var(--rpx));
     position: relative;
-    flex: 0 0 auto;
+    width: calc(1052 * var(--rpx));
 }
-
-.header .logo {
-    display: inline-flex;
+.header-container .logo {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    gap: calc(5 * var(--rpx));
     position: relative;
-    flex: 0 0 auto;
-    cursor:pointer;
-}
-
-.header .logo-svg {
-    position: relative;
-    width: 24px;
-    height: 24px;
-}
-
-.header .logo-text {
-    position: relative;
-    width: 113px;
-    height: 24px;
-    margin-top: -1px;
-    font-family: "Keania One", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    white-space: nowrap;
-    line-height: 24px;
-}
-
-.header .menu-items {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 13px;
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.header .menu-items-text {
-    position: relative;
-    width: 113px;
-    height: 24px;
-    margin-top: -1px;
-    font-family: "Noto Sans KR", Sans-Serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    white-space: nowrap;
-    line-height: 24px;
+    width: calc(142 * var(--rpx));
+    z-index: 100;
     cursor: pointer;
 }
-
-.header .login-menu-text {
+.header-container .logo-svg {
+    flex-shrink: 1;
     position: relative;
-    width: 113px;
-    height: 24px;
-    margin-top: -1px;
-    font-family: "Keania One", Helvetica;
-    font-weight: 400;
+    width: calc(24 * var(--rpx));
+    height: calc(24 * var(--rpx));
+    background: url(../images/logo.svg)
+    no-repeat center;
+    background-size: cover;
+    z-index: 100;
+    overflow: hidden;
+}
+.header-container .logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    position: relative;
+    width: calc(113 * var(--rpx));
+    height: calc(24 * var(--rpx));
     color: #000000;
-    font-size: 20px;
-    text-align: right;
-    letter-spacing: 0;
+    font-family: Keania One, var(--default-font-family);
+    font-size: calc(20 * var(--rpx));
+    font-weight: 400;
+    text-align: left;
     white-space: nowrap;
-    line-height: 24px;
+    z-index: 100;
+}
+.header-container .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    gap: calc(13 * var(--rpx));
+    position: relative;
+    width: calc(491 * var(--rpx));
+    z-index: 100;
+}
+.header-container .item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    position: relative;
+    width: calc(113 * var(--rpx));
+    height: calc(24 * var(--rpx));
+    color: #000000;
+    font-family: Noto Sans KR, var(--default-font-family);
+    font-size: calc(16 * var(--rpx));
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 100;
+    cursor: pointer;
+}
+.header-container .item-text-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    position: relative;
+    width: calc(113 * var(--rpx));
+    height: calc(24 * var(--rpx));
+    color: #000000;
+    font-family: Noto Sans KR, var(--default-font-family);
+    font-size: calc(16 * var(--rpx));
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 100;
+    cursor: pointer;
+}
+.header-container .item-text-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    position: relative;
+    width: calc(113 * var(--rpx));
+    height: calc(24 * var(--rpx));
+    color: #000000;
+    font-family: Noto Sans KR, var(--default-font-family);
+    font-size: calc(16 * var(--rpx));
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 100;
+    cursor: pointer;
+}
+.header-container .item-text-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    position: relative;
+    width: calc(113 * var(--rpx));
+    height: calc(24 * var(--rpx));
+    color: #000000;
+    font-family: Noto Sans KR, var(--default-font-family);
+    font-size: calc(16 * var(--rpx));
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 100;
+    cursor: pointer;
+}
+.header-container .login-menu-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 1;
+    position: relative;
+    width: calc(113 * var(--rpx));
+    height: calc(24 * var(--rpx));
+    color: #000000;
+    font-family: Keania One, var(--default-font-family);
+    font-size: calc(20 * var(--rpx));
+    font-weight: 400;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 100;
     cursor: pointer;
 }

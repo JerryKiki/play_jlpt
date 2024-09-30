@@ -1,17 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<header class="header">
+<header class="header-container">
     <div class="menu">
         <div class="logo" onclick="location.href='../home/main'">
-            <img class="logo-svg" src="${pageContext.request.contextPath}/images/logo.svg"/>
-            <div class="logo-text">PLAY JLPT</div>
+            <div class="logo-svg"></div>
+            <span class="logo-text">PLAY JLPT</span>
         </div>
         <div class="menu-items">
-            <div class="menu-items-text" onclick="location.href='../exam/main'">문제풀이</div>
-            <div class="menu-items-text">점수분석</div>
-            <div class="menu-items-text">질의응답</div>
-            <div class="menu-items-text">커뮤니티</div>
+          <span class="item-text" onclick="location.href='../exam/main'">문제풀이</span
+          ><span class="item-text-1">점수분석</span
+        ><span class="item-text-2">질의응답</span
+        ><span class="item-text-3">커뮤니티</span>
         </div>
-        <div class="login-menu-text" onclick="location.href='../member/login'">LOGIN</div>
+        <span class="login-menu-text" onclick="location.href='../member/login'">LOGIN</span>
     </div>
 </header>

@@ -1,6 +1,6 @@
 @import url('fonts.css');
 
-.element-HOME .footer {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     border-color: #ebebeb;
 }
 
-.element-HOME .infos {
+.infos {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@
     flex: 0 0 auto;
 }
 
-.element-HOME .send-email {
+.send-email {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@
     flex: 0 0 auto;
 }
 
-.element-HOME .mail-icon-frame {
+.mail-icon-frame {
     position: relative;
     width: 62px;
     height: 62px;
@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.element-HOME .send-mail-text {
+.send-mail-text {
     position: relative;
     width: fit-content;
     font-family: "Noto Sans KR", Sans-Serif;
@@ -65,7 +65,7 @@
     white-space: nowrap;
 }
 
-.element-HOME .info {
+.info {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
@@ -74,7 +74,7 @@
     flex: 0 0 auto;
 }
 
-.element-HOME .made-info-text {
+.made-info-text {
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -88,7 +88,7 @@
     letter-spacing: 0;
 }
 
-.element-HOME .copyright-text {
+.copyright-text {
     position: relative;
     align-self: stretch;
     height: 32px;

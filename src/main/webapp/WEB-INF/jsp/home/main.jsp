@@ -235,8 +235,6 @@
             </div>
         </div>
 
-        <ul id="ranking-list"></ul>
-
         <%@ include file="../common/footer.jspf" %>
 
     </div>
